@@ -25,14 +25,14 @@ jobs:
           arch: aarch64-darwin
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - uses: cachix/install-nix-action@v27
+      - uses: cachix/install-nix-action@v31
         with:
           extra_nix_config: |
             experimental-features = nix-command
 
-      - uses: cachix/cachix-action@v15
+      - uses: cachix/cachix-action@v17
         with:
           name: crystal-ci
           signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'

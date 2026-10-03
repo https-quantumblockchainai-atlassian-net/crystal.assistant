@@ -28,7 +28,7 @@ jobs:
     name: "LLVM ${{ matrix.llvm_version }}"
     steps:
       - name: Checkout Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install LLVM ${{ matrix.llvm_version }}
         run: |
@@ -40,7 +40,7 @@ jobs:
       - name: Install Crystal
         uses: crystal-lang/install-crystal@v1
         with:
-          crystal: "1.14.0"
+          crystal: "1.21.1"
 
       - name: Build libllvm_ext
         run: make -B deps
