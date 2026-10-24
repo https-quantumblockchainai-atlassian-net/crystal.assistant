@@ -41,7 +41,7 @@ jobs:
             flags: "USE_PCRE1=true"
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Prepare System
         run: bin/ci prepare_system
@@ -59,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Prepare System
         run: bin/ci prepare_system
@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Prepare System
         run: bin/ci prepare_system
@@ -98,7 +98,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Prepare System
         run: bin/ci prepare_system

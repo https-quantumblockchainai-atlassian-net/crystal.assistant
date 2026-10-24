@@ -13,14 +13,14 @@ env:
 
 jobs:
   wasm32-test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     container: crystallang/crystal:1.14.0-build
     steps:
       - name: Download Crystal source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install wasmtime
-        uses: mwilliamson/setup-wasmtime-action@v2
+        uses: mwilliamson/setup-wasmtime-action@v3
         with:
           wasmtime-version: "2.0.0"
 
